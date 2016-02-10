@@ -63,14 +63,14 @@ Read the `README.md` first
 `chef-apply` is for a one-off on recipes
 `chef-client` is an agent that performs all the steps on a node rather than 'one-off'
 
-```unix
+```shell
 chef-client --local-mode -r "recipe[apach::server]"
 ```
 running the 'server' recipe from the 'apache' cookbook from the root dir of your cookbook repo
 
 _NOTE:_  the chef-client assumes `/home/chef` unless you have a `cookbooks` directory
 
-```unix
+```shell
 chef-client --local-mode -r "recipe[apach::server],recipe[workstation::setup]"
 ```
 This command runs multiple recipes _NOTE:_ ensure there is no space around the comma(,)
