@@ -55,8 +55,8 @@ Declare out the attributes that make sense eg. `action :create`
 
 ---
 
-Ensure you are `git`ing everything
-Read the `README.md` first
+Ensure you are `git`ing everything  
+Read the `README.md` first  
 
 ---
 
