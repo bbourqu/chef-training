@@ -117,9 +117,9 @@ destroys a test instance
 
 ```shell
 kitchen test
-```shell
-runs `kitchen destory` -> `kitchen create` -> `kitchen converge` -> `kitchen verify` -> `kitchen destory` in that order
+```
 
+runs `kitchen destory` -> `kitchen create` -> `kitchen converge` -> `kitchen verify` -> `kitchen destory` in that order
 
 
 [ServerSpec](http://serverspec.org)
