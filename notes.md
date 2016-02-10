@@ -92,11 +92,13 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
 
 ---
 
-- Write test case first
-- Run virtual machine and fail
-- Write code
-- Run virtual machine and succeed
-- Destroy virtual machine
+* Write test case first
+* Run virtual machine and fail
+* Write code
+* Run virtual machine and succeed
+* Destroy virtual machine
+
+---
 
 kitchen create -> kitchen converge -> kitchen verify -> kitchen destroy
 
