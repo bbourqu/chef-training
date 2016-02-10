@@ -89,11 +89,12 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
 * ChefDK
  * RuboCop
  * kitchen
-
+---
 - Write test case first
 - Run virtual machine and fail
 - Write code
 - Run virtual machine and succeed
+- Destroy virtual machine
 
 kitchen create -> kitchen converge -> kitchen verify -> kitchen destroy
 
@@ -119,7 +120,7 @@ destroys a test instance
 kitchen test
 ```
 
-runs `kitchen destory` -> `kitchen create` -> `kitchen converge` -> `kitchen verify` -> `kitchen destory` in that order
+runs `kitchen destroy` -> `kitchen create` -> `kitchen converge` -> `kitchen verify` -> `kitchen destroy` in that order
 
 
 [ServerSpec](http://serverspec.org)
@@ -127,7 +128,7 @@ runs `kitchen destory` -> `kitchen create` -> `kitchen converge` -> `kitchen ver
 ## Example
 
 ```ruby
-describe package('treee') do
+describe package('tree') do
   it { should be_installed }
 end
 ```
