@@ -89,7 +89,9 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
 * ChefDK
  * RuboCop
  * kitchen
+
 ---
+
 - Write test case first
 - Run virtual machine and fail
 - Write code
