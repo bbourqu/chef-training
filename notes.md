@@ -28,9 +28,9 @@ a file created with the content defined
 ```
 will delete the file
 
-`chef-apply --help` will send out the help block
-`chef-apply -e` execute inline command
-`chef-apply <file>` run the recipe
+`chef-apply --help` will send out the help block  
+`chef-apply -e` execute inline command  
+`chef-apply <file>` run the recipe  
 
 [File Resource Information](https://docs.chef.io/resource_file.html)
 
