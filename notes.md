@@ -161,7 +161,7 @@ found at `cookbooks/<cookbook>/templates/default/`
 ```shell
 chef generate template index.html
 ```
-generates the file index.erb in `templates/default/` under the cookbook
+generates the file index.html.erb in `templates/default/` under the cookbook
 
 `<%=` is known as a "angry squid/squid-rocket"
 
