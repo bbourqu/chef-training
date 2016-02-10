@@ -44,8 +44,20 @@ Declare out the attributes that make sense eg. `action :create`
 ---
 
 `chef --help` will send out the help block
-`chef generate` generate a new app, cookbook, or component
+`chef generate <name>` generate a new app, cookbook, or component
 
 [Chef Cookbook Information](https://docs.chef.io/cookbooks.html)
+
+## Examples
+`chef generate cookbook apache`  
+`chef generate recipe server`  
+
+
+---
+
+Ensure you are `git`ing everything
+
+---
+
 
 
