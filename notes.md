@@ -16,7 +16,7 @@ installs latest version of that package
 
 ```ruby
 service 'ntp' do
-  action [ :enable, :start]
+  action [ :enable, :start ]
 end
 ```
 enabled on reboot and started
@@ -84,6 +84,11 @@ include_recipe 'workstation::setup'
 ```
 runs the recipe here.  runs in the order provided if multiple `include_recipe`s are there
 
+# Testing Cookbooks
+
+* ChefDK
+ * RuboCop
+ * kitchen
 
 
 
