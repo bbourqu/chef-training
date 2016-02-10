@@ -144,5 +144,29 @@ _NOTE:_ there is a long directory where these specs live, see [Writing Test](htt
 
 utilize ohai to gather information about your system as a [JSON](http://json.org) object
 
+## Example
+```ruby
+#{node['ipaddress']}
+```
+
+## Templates
+
+Use when we have formatted string interpolation in a file that will end up on the node
+
+More information can be found at [Template Resource](https://docs.chef.io/resource_template.html)
+
+found at `cookbooks/<cookbook>/templates/default/`
+
+### Example of generating
+```shell
+chef generate template index.html
+```
+generates the file index.erb in `templates/default/` under the cookbook
+
+`<%=` is known as a "angry squid/squid-rocket"
+
+now from `#{node['ipaddress']}` to `<%= node['ipaddress'] %>` 
+
+
 
 
