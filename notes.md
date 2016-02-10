@@ -28,7 +28,10 @@ a file created with the content defined
 ```
 will delete the file
 
-`chef-apply` will run a chef command inline
 `chef-apply --help` will send out the help block
+`chef-apply -e` execute inline command
+`chef-apply <file>` run the recipe
 
 [File Resource Information](https://docs.chef.io/resource_file.html)
+
+Declare out the actions that make sense eg. `action :create` 
