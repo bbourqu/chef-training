@@ -138,6 +138,11 @@ end
 ```
 _NOTE:_ there is a long directory where these specs live, see [Writing Test](http://kitchen.ci/docs/getting-started/writing-test)
 
+---
+
+# Capturing Information about the System
+
+utilize ohai to gather information about your system as a [JSON](http://json.org) object
 
 
 
