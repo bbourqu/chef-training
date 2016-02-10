@@ -1,8 +1,8 @@
 # Notes in no particular order
 
-242 - admin
-255 - linux
-222 - windows
+242 - admin  
+255 - linux  
+222 - windows  
 
 ```ruby
 package 'httpd'  
@@ -28,6 +28,6 @@ a file created with the content defined
 ```
 will delete the file
 
-'chef-apply' will run a chef command inline
-'chef-apply --help' will send out the help block
+`chef-apply` will run a chef command inline
+`chef-apply --help` will send out the help block
 
