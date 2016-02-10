@@ -5,9 +5,9 @@
 
 # Notes in no particular order
 
-242 - admin  
-255 - linux  
-222 - windows  
+232 - admin  
+177 - linux  
+146 - windows  
 
 ```ruby
 package 'httpd'  
@@ -59,6 +59,32 @@ Ensure you are `git`ing everything
 Read the `README.md` first  
 
 ---
+
+`chef-apply` is for a one-off on recipes
+`chef-client` is an agent that performs all the steps on a node rather than 'one-off'
+
+```unix
+chef-client --local-mode -r "recipe[apach::server]"
+```
+running the 'server' recipe from the 'apache' cookbook from the root dir of your cookbook repo
+
+*NOTE:*  the chef-client assumes `/home/chef` unless you have a `cookbooks` directory
+
+```unix
+chef-client --local-mode -r "recipe[apach::server],recipe[workstation::setup]"
+```
+This command runs multiple recipes *NOTE:* ensure there is no space around the comma(,)
+
+---
+
+[include_recipe](https://docs.chef.io/recipes.html#include-recipes)
+
+```ruby
+include_recipe 'workstation::setup'
+```
+runs the recipe here.  runs in the order provided if multiple `include_recipe`s are there
+
+
 
 
 
