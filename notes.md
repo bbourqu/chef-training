@@ -90,6 +90,49 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
  * RuboCop
  * kitchen
 
+- Write test case first
+- Run virtual machine and fail
+- Write code
+- Run virtual machine and succeed
+
+kitchen create -> kitchen converge -> kitchen verify -> kitchen destroy
+
+```shell
+kitchen init
+```
+```shell
+kitchen converge [INSTANCE|REGEX|all]
+```
+_NOTE:_ converge doesn't kill the machine
+
+```shell
+kitchen verify [INSTANCE|REGEXP|all]
+```
+verifies the state of the machine after the cookbook runs
+
+```shell
+kitchen destroy
+```
+destroys a test instance
+
+```shell
+kitchen test
+```shell
+runs `kitchen destory` -> `kitchen create` -> `kitchen converge` -> `kitchen verify` -> `kitchen destory` in that order
+
+
+
+[ServerSpec](http://serverspec.org)
+
+## Example
+
+```ruby
+describe package('treee') do
+  it { should be_installed }
+end
+```
+_NOTE:_ there is a long directory where these specs live, see [Writing Test](http://kitchen.ci/docs/getting-started/writing-test)
+
 
 
 
