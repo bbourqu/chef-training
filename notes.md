@@ -31,4 +31,4 @@ will delete the file
 `chef-apply` will run a chef command inline
 `chef-apply --help` will send out the help block
 
-(File Resource Information)[https://docs.chef.io/resource_file.html]
+[File Resource Information](https://docs.chef.io/resource_file.html)
