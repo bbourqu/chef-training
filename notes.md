@@ -68,12 +68,12 @@ chef-client --local-mode -r "recipe[apach::server]"
 ```
 running the 'server' recipe from the 'apache' cookbook from the root dir of your cookbook repo
 
-*NOTE:*  the chef-client assumes `/home/chef` unless you have a `cookbooks` directory
+_NOTE:_  the chef-client assumes `/home/chef` unless you have a `cookbooks` directory
 
 ```unix
 chef-client --local-mode -r "recipe[apach::server],recipe[workstation::setup]"
 ```
-This command runs multiple recipes *NOTE:* ensure there is no space around the comma(,)
+This command runs multiple recipes _NOTE:_ ensure there is no space around the comma(,)
 
 ---
 
