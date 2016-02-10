@@ -39,5 +39,13 @@ will delete the file
 
 [File Resource Information](https://docs.chef.io/resource_file.html)
 
-Declare out the actions that make sense eg. `action :create`
+Declare out the attributes that make sense eg. `action :create`
+
+---
+
+`chef --help` will send out the help block
+`chef generate` generate a new app, cookbook, or component
+
+[Chef Cookbook Information](https://docs.chef.io/cookbooks.html)
+
 
