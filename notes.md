@@ -1,3 +1,8 @@
+# What I want to learn
+* Staying OS Agnostic?
+* Testing well
+
+
 # Notes in no particular order
 
 242 - admin  
@@ -34,4 +39,5 @@ will delete the file
 
 [File Resource Information](https://docs.chef.io/resource_file.html)
 
-Declare out the actions that make sense eg. `action :create` 
+Declare out the actions that make sense eg. `action :create`
+
