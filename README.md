@@ -89,7 +89,7 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
 * ChefDK
  * RuboCop
  * kitchen
-
+ * rubocop
 ---
 
 * Write test case first
@@ -220,4 +220,29 @@ knife ssh "role:web" -x <user> -P <password> "sudo chef-client"
 example of telling a group of nodes under the "web" role to run chef-client
 
 ## Search
+
+[Chef Search](https://docs.chef.io/chef_search.html)
+
+ohai is going to report back up to Chef Server
+
+```ruby
+all_web_nodes = search('node','role:web')
+```
+example of a search added to an attribute
+
+## Environments
+
+* Apply a node to an environment
+* make search queries much more specific
+* can define defferent functions of nodes that live on the same system
+* `_default` is the default environment assigned to all nodes
+
+_NOTE:_ exists under /environments under your root cookbook dir
+
+```shell
+knife node environment set <node> acceptance
+```
+Example of making a <node> be placed into a environment
+
+
 
