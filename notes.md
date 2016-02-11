@@ -5,7 +5,7 @@
 
 # Notes in no particular order
 
-232 - admin  
+232 - node1  
 177 - linux  
 146 - windows  
 
@@ -166,6 +166,30 @@ generates the file index.html.erb in `templates/default/` under the cookbook
 `<%=` is known as a "angry squid/squid-rocket"
 
 now from `#{node['ipaddress']}` to `<%= node['ipaddress'] %>` 
+
+
+# Chef Server
+
+1. Provision Server
+2. Install Chef
+3. Copy Web Server cookbook
+4. Apply the cookbook
+
+## Hosted Chef
+
+[Sign up for an account](https://www.chef.io)
+
+* Download Starter Kit
+* Allow the Keys for your org to be reset
+
+[Repo of all the cookbooks we need](https://github.com/chef-training/chef-essentials-repo)
+
+`knife` - command-line tool...interfaces between local and Chef Server  
+
+`berk` - command-line tool...uploads cookbooks to the Chef Server  
+
+`knife bootstrap` - installs chef tools if they are not already installed; configures to communicate with the Chef Server; runs chef-client to apply a default run list
+
 
 
 
