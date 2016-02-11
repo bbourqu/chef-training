@@ -190,7 +190,20 @@ now from `#{node['ipaddress']}` to `<%= node['ipaddress'] %>`
 
 `knife bootstrap` - installs chef tools if they are not already installed; configures to communicate with the Chef Server; runs chef-client to apply a default run list
 
+`knife node run_list add <node_name> "recipe[<some_recipe>]"` - add a recipe to the run list for a node
 
+## Community Cookbooks
+
+[Supermarket](https://supermarket.chef.io)
+
+"Wrapper Cookbook" - add new attributes while keeping the core functionality of the original cookbook (Perferred)
+
+```shell
+╭─user@host  ~/chef-repo/cookbooks/myhaproxy ‹system› ‹master*›
+╰─$ knife node show node1 -a ipaddress                                                                                                                                                       node1:
+  ipaddress: ###.31.#.###
+```
+showing a node attribute example
 
 
 
