@@ -242,7 +242,15 @@ _NOTE:_ exists under /environments under your root cookbook dir
 ```shell
 knife node environment set <node> acceptance
 ```
-Example of making a <node> be placed into a environment
+Example of making a "node" be placed into a environment
 
+# Resources
 
+* [Learn Chef](http://learn.chef.io)
+* [Additional Skills](https://learn.chef.io/skills)
+* [Docs](http://docs.chef.io)
+* [YouTube Chef Channel](https://www.youtube.com/user/getchef/playlists)
+* The Ship Show
+* [Food Fight](foodfightshow.org)
+* [ChefCon](https://www.chef.io/chefconf/)
 
