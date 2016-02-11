@@ -6,8 +6,8 @@
 # Notes in no particular order
 
 232 - node1  
-177 - linux  
-146 - windows  
+177 - node3  
+146 - node2  
 
 ```ruby
 package 'httpd'  
@@ -186,7 +186,7 @@ now from `#{node['ipaddress']}` to `<%= node['ipaddress'] %>`
 
 `knife` - command-line tool...interfaces between local and Chef Server  
 
-`berk` - command-line tool...uploads cookbooks to the Chef Server  
+`berks` - command-line tool...uploads cookbooks to the Chef Server  
 
 `knife bootstrap` - installs chef tools if they are not already installed; configures to communicate with the Chef Server; runs chef-client to apply a default run list
 
@@ -205,5 +205,19 @@ now from `#{node['ipaddress']}` to `<%= node['ipaddress'] %>`
 ```
 showing a node attribute example
 
+## Roles
 
+Describes a node to better define its use
+
+```shell
+knife node run_list set node2 "role[load_balancer]"
+```
+example of changing a node to a role
+
+```shell
+knife ssh "role:web" -x <user> -P <password> "sudo chef-client"
+```
+example of telling a group of nodes under the "web" role to run chef-client
+
+## Search
 
