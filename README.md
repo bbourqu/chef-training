@@ -5,10 +5,6 @@
 
 # Notes in no particular order
 
-232 - node1  
-177 - node3  
-146 - node2  
-
 ```ruby
 package 'httpd'  
 ```
