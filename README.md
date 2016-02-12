@@ -86,6 +86,7 @@ runs the recipe here.  runs in the order provided if multiple `include_recipe`s 
  * RuboCop
  * kitchen
  * rubocop
+
 ---
 
 * Write test case first
